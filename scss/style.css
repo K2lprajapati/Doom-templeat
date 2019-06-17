@@ -16,7 +16,8 @@ body {
   margin-left: -15px; }
 
 .first-section-main {
-  display: flex; }
+  display: flex;
+  /*background-image: linear-gradient(to right, #0e0429, #20294b, #374b6d, #516f91, #6f96b4, #78a4c7, #81b1da, #8bbfed, #8cb3f1, #9aa3f1, #af91e8, #c77cd7);*/ }
 
 .first-section-left-side {
   flex: 1;
