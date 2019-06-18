@@ -5,24 +5,45 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
-<div>
+<div class="first-section">
+    <!---->
     <div class="first-section-main ">
-        <!--<div class="container">-->
-            <div class="first-section-left-side">
-                <div class="container">
-                    <p>hello world</p>
-                </div>
-            </div>
-            <div class="first-section-right-side">
-                <div class="container">
-                    <p>hello world</p>
-                </div>
-            </div>
-        <!--</div>-->
+        <div class="first-section-left-side"></div>
+        <div class="first-section-right-side">
+            <img class="white_dot" src="img/white%20dot.png">
+        </div>
     </div>
+    <div class="overlay-text">
+        <h1>Doom</h1>
+        <p>What else do you need?</p>
+    </div>
+    <!--side bar-->
+    <div class="sidebar-main">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+         <span class="toogal-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!--end side bar-->
 </div>
+<!--script file-->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </body>
 </html>
